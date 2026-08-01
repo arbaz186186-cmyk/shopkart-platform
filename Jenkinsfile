@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d --name shopkart-web -p 8088:80 shopkart:latest'
+                 sh 'docker run -d --name shopkart-web -p 8088:80 shopkart:latest'
             }
         }
 
