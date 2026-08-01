@@ -136,3 +136,24 @@ footer{
     color:#0d6efd;
     margin-bottom:15px;
 }
+.contact{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
