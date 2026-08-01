@@ -18,9 +18,20 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                 sh 'docker run -d --name shopkart-web -p 8088:80 shopkart:latest'
+                sh 'docker run -d --name shopkart-web -p 8088:80 shopkart:latest'
             }
         }
 
+        stage('Tag Docker Image') {
+            steps {
+                sh 'docker tag shopkart:latest arbaz186/shopkart:v1'
+            }
+        }
+
+        stage('Push Docker Image') {
+            steps {
+                sh 'docker push arbaz186/shopkart:v1'
+            }
+        }
     }
 }
